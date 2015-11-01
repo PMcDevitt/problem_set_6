@@ -1,4 +1,4 @@
-# Problem 3 - Asynchronous code without promises or blocking loops
+# Problem 2 - Asynchronous code without promises or blocking loops
 
 ## Description
 
