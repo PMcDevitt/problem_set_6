@@ -11,7 +11,7 @@ In the following exercises use everything you know about the DOM, `XMLHttpReques
 There are two exercises in this problem set, each of which has a corresponding directory (e.g. "Problem 1" lives in `./problem_1`) containing a `README.md` file. Read each problem separately, it may be worth only opening one problem directory in the text editor at a time.
 
 1. [Handling Events](problem_1/README.md)
-1. [Asynchronous code without promises or blocking loops](problem_3/README.md)
+1. [Asynchronous code without promises or blocking loops](problem_2/README.md)
 
 ## Reflection
 
