@@ -23,7 +23,7 @@ Your final result should appear on the screen as fast as it possibly can. Do *no
 
 ## Setup
 
-`cd` into this directory (from the path you cloned this to: `cd problem_3`). Then,
+`cd` into this directory (from the path you cloned this to: `cd problem_2`). Then,
 
 1. `npm install`
 1. `npm start`
