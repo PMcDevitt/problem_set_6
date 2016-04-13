@@ -11,11 +11,32 @@
     </div>
 
     <script type="text/javascript">
+      function getIndividualUsersAsynchronously(users, getIndividualUser){
+        users.forEach(function(user){
+          getIndividualUser(user.id)
+        })
+      }
+
+      function getIndividualUser(id){
+        var indvUserRequest = new XMLHttpRequest
+        indvUserRequest.open('GET', '/users/'+id)
+        indvUserRequest.responseType = 'json'
+        indvUserRequest.addEventListener('load', function(){
+          console.log(indvUserRequest.response)
+          total += indvUserRequest.response.likes
+          document.getElementById('total-likes').innerHTML = total
+        })
+        indvUserRequest.send()
+      }
+
+      var total = 0
+
       var usersRequest = new XMLHttpRequest;
       usersRequest.open('GET', '/users');
       usersRequest.responseType = 'json';
       usersRequest.addEventListener('load', function () {
-        // your code here
+        console.log(usersRequest.response)
+        getIndividualUsersAsynchronously(usersRequest.response, getIndividualUser)
       });
       usersRequest.send();
     </script>
